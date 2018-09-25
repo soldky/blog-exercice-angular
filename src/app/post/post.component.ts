@@ -9,9 +9,9 @@ export class PostComponent implements OnInit {
 
   @Input() postTitle: string;
   @Input() postContain: string;
-  @Input() lastUpdate: date;
-  @Input() like: int;
-  @Input() dislike: int;
+  @Input() lastUpdate: Date;
+  @Input() like: number;
+  @Input() dislike: number;
 
   constructor() { }
 
