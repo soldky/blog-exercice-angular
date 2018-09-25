@@ -1,0 +1,12 @@
+<li class="list-group-item" [ngStyle]="like > dislike && { 'background-color': 'green' } || dislike > like && { 'background-color': 'red' }">
+	<h4>
+		{{ postTitle }}
+		<span style="float: right; top: 0; font-size: 0.6em; color: grey;">{{ lastUpdate | date: "medium"}}</span>
+    </h4>
+
+	<p>{{ postContain }}</p>
+	<div class="row">
+		<button class="btn btn-outline-success" style="margin-right: 20px; margin-left: 20px;" (click) = "addLike()">Love It</button>
+		<button class="btn btn-outline-danger" (click) = "addDislike()">Don't Love It</button>
+	</div>
+</li>
